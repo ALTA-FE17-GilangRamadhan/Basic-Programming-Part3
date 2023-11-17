@@ -1,4 +1,4 @@
-function removeDuplicates(array: number[]): number {
+function removeDuplicates(array: number[]): number | string {
   // Your Code Here
   let newArr: number[] = [];
 
@@ -8,7 +8,9 @@ function removeDuplicates(array: number[]): number {
     }
   }
 
-  return newArr.length;
+  let result: string = "panjang array: " + newArr.length + "\n" + "Array: " + newArr;
+
+  return result;
 }
 
 console.log(removeDuplicates([2, 3, 3, 3, 6, 9, 9])); // 4
